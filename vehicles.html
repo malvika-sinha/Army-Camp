@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Vehicle Details</h1>
+    <div class="camera-image">
+        <img src="camera.jpg" alt="Camera">
+        <p class="scanning">Scan here</p>
+    </div>
+    <div id="vehicle-details">
+        <!-- Vehicle details will be inserted here by JavaScript -->
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const vehicleDetails = document.getElementById('vehicle-details');
+            const vehicles = [
+                'Vehicle 1', 'Vehicle 2', 'Vehicle 3', 'Vehicle 4', 'Vehicle 5',
+                'Vehicle 6', 'Vehicle 7', 'Vehicle 8', 'Vehicle 9', 'Vehicle 10'
+            ];
+
+            vehicles.forEach(vehicle => {
+                const vehicleItem = document.createElement('div');
+                vehicleItem.className = 'vehicle-item';
+                vehicleItem.innerHTML = `
+                    <span>${vehicle}</span>
+                    <button onclick="allowVehicle('${vehicle}')">Allow</button>
+                    <button onclick="denyVehicle('${vehicle}')">Deny</button>
+                    <button onclick="inTimeVehicle('${vehicle}')">In Time</button>
+                    <button onclick="moreDetails('${vehicle}')">More Details</button>
+                `;
+                vehicleDetails.appendChild(vehicleItem);
+            });
+        });
+
+        function allowVehicle(vehicle) {
+            alert(`Allowing ${vehicle}`);
+        }
+
+        function denyVehicle(vehicle) {
+            alert(`Denying ${vehicle}`);
+        }
+
+        function moreDetails(vehicle) {
+            alert(`More details for ${vehicle}`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.camp-container a {
+    display: inline-block;
+    margin: 20px;
+}
+
+.camp-container img {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+
+}
+
+.camp-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #007BFF;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+.camera-image img {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.scanning{
+    position: relative;
+    top: -39px;
+    font-family: calibri;
+    font-weight: 700;
+    font-style: italic;
+}
+.button-container {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #007BFF;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+.vehicle-container {
+    margin: 20px;
+}
+
+.vehicle-item {
+    margin: 10px;
+}
+
+.vehicle-item button {
+    margin-left: 10px;
+}
