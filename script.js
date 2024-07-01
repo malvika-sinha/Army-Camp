@@ -37,3 +37,12 @@ function denyVehicle(vehicle) {
 function moreDetails(vehicle) {
     alert(`More details for ${vehicle}`);
 }
+
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    console.log(`Username: ${username}, Password: ${password}`);
+
+});
