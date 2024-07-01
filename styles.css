@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    overflow-x: hidden;
 }
-
 
 .camp-container a {
     display: inline-block;
@@ -92,4 +92,168 @@ button:hover {
 
 .vehicle-item button {
     margin-left: 10px;
+}
+/* ------------HOME PAGE---------------- */
+.logo{
+    width: 144px;
+    height: 118px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+    position: relative;
+    left: -42%;
+    bottom: -23px;
+    border-radius: 78%;
+}
+.logo2{
+    width: 200px;
+    height: 150px;
+    border: olid #000;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 92px;
+    position: relative;
+    top: -190px;
+    left: 40%;
+}
+.heading-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 19%;
+    bottom: 67px;
+    font-size: 38px;
+    font-family: fangsong;
+}
+
+.heading-container h1, .heading-container h2 {
+    margin: 0;
+}
+
+.heading-container h1 + h2 {
+}
+
+.heading-container h2 + h1 {
+    margin-left: 20px; 
+    color: #e5402e;
+}
+.HH1{
+    color: #e5402e;
+}
+
+.con2{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -169px;
+    left: 2%;
+    width: 79%;
+}
+.nav-button{
+    width: 158px;
+    font-size: 80%;
+    font-weight: 700;
+}
+.page_p1{
+    position: relative;
+    left: 18px;
+    bottom: -4px;
+
+}
+.page_p2{
+    position: relative;
+    left: 157px;
+    bottom: 30px;
+}
+/* .video{
+    width: 20%;
+} */
+ .traffic_video{
+    width: 50%; /* Adjust as needed for smaller size */
+    max-width: 400px; /* Adjust as needed for smaller size */
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ video {
+    width: 69%;
+    border-radius: 8px;
+    position: relative;
+     top: -168px;
+    left: -12%;
+    border: 4px solid;
+}
+
+.name_plate{
+    color: white;
+    
+}
+.veh_name{
+    color: white;
+    position: relative;
+    left: 77%;
+    bottom: 748px;
+    font-family: monospace;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+}
+.img_nameplate{
+    border: 2px solid white;
+    width: 22%;
+    height: 301px;
+    position: relative;
+    top: -758px;
+    left: 76%;
+    border-radius: 5px;
+}
+.traffic_image{
+    border: 2px solid;
+    height: 60%;
+    border-radius: 7px;
+    width: 95%;
+    position: relative;
+    left: 7px;
+    top: 3%;
+}
+.traffic_nameplate{
+    border: 2px solid;
+    height: 31%;
+    border-radius: 5px;
+    width: 95%;
+    position: relative;
+    left: 7px;
+    top: 5%;
+}
+.Details{
+    border: 2px solid white;
+    width: 22%;
+    height: 301px;
+    position: relative;
+    top: -758px;
+    left: 76%;
+    border-radius: 5px;
+
+}
+.vehicle_details{
+    text-align: left;
+    position: relative;
+    left: 5%;
+    top: 8px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.detail_button{
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: bolder;
+    height: 33px;
+    position: relative;
+    top: -8px;
+    left: 199px;
+    width: 25%;
+    border-radius: 5px;
+
 }
