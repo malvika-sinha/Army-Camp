@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .camera-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .camera-image {
+        width: 133px;
+        height: 128px;
+        margin: 20px auto;
+        cursor: pointer;
+        border-radius: 87px;
+    }
+
+    .scanning {
+        position: absolute;
+        top: 163px;
+        width: 186px;
+        font-family: Calibri;
+        font-weight: 700;
+        font-style: italic;
+        text-align: center;
+        font-size: 147%;
+        left: -16%;
+    }
+</style>
+
+<body>
+    <div class="con">
+        <div class="first">
+            <img src="Thunder.png" alt="" class="logo">
+            <div class="heading-container">
+                <h1 class="HH1">V</h1>
+                <h2 class="H1">EHICLE</h2>
+                <h1>T</h1>
+                <h2>RACKING</h2>
+                <h1>S</h1>
+                <h2>YSTEM</h2>
+            </div>
+            <img src="logo.png" alt="" class="logo2">
+        </div>
+    </div>
+    <div class="camera-container">
+        <img src="camera.jpg" alt="Camera" id="camera-image" class="camera-image">
+        <p class="scanning">Scan Vehicles here</p>
+    </div>
+    <script>
+        document.getElementById('camera-image').addEventListener('click', async () => {
+            const video = document.getElementById('video');
+
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+                video.style.display = 'block';
+            } catch (error) {
+                console.error('Error accessing camera:', error);
+                alert('Unable to access the camera.');
+            }
+        });
+    </script>
+</body>
+</html>

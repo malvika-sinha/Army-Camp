@@ -6,7 +6,38 @@
     <title>Vehicle Tracking System - Login</title>
     <link rel="stylesheet" href="styles2.css">
 </head>
+<style>
+    .logo{
+    width: 144px;
+    height: 118px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 6px;
+    position: relative;
+    left: -81%;
+    bottom: 123px;
+    border-radius: 78%;
+    top: -236px;
+
+}
+.logo2{
+    width: 200px;
+    height: 150px;
+    border: olid #000;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 92px;
+    position: relative;
+    top: -236px;
+    left: 206%;
+}
+</style>
 <body>
+    <div class="first">
+            <img src="Thunder.png" alt="" class="logo">         
+            <img src="logo.png" alt="" class="logo2">
+        </div>
+       
     <div class="login-container">
         <div class="logo-container">
             <img src="Thunder.png" alt="Logo">
@@ -28,6 +59,23 @@
             <button type="submit" class="set">Settings</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    if(username == "Vedank" && password == "Vedank_2024"){
+        window.location.href = 'homepage.html';        
+    }
+    else{
+        alert("Invalid Username or Password");        
+    } 
+});
+
+
+
+    </script>
 </body>
 </html>

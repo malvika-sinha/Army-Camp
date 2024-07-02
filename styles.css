@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     overflow-x: hidden;
+    background-image: url(bg.jpg);
+    color: white;
 }
 
 .camp-container a {
@@ -87,11 +89,16 @@ button:hover {
 }
 
 .vehicle-item {
-    margin: 10px;
+    margin: 14px;
+    position: relative;
+    top: -113px;
 }
 
 .vehicle-item button {
-    margin-left: 10px;
+    margin-left: 13px;
+    margin-left: 13px;
+    border-radius: 8px;
+
 }
 /* ------------HOME PAGE---------------- */
 .logo{
@@ -147,7 +154,7 @@ button:hover {
     position: relative;
     top: -169px;
     left: 2%;
-    width: 79%;
+    width:100%;
 }
 .nav-button{
     width: 158px;
@@ -156,15 +163,25 @@ button:hover {
 }
 .page_p1{
     position: relative;
-    left: 18px;
-    bottom: -4px;
+    top: 15%;
+    left: 146px;
+    width: 108%;
 
 }
 .page_p2{
     position: relative;
-    left: 157px;
-    bottom: 30px;
+    top: 5%;
+    left: 146px;
 }
+.veh_details{
+    position: relative;
+    top: -139px;
+    font-size: 31px;
+    font-family: serif;
+    font-style:italic;
+    
+}
+
 /* .video{
     width: 20%;
 } */
@@ -193,7 +210,7 @@ button:hover {
     color: white;
     position: relative;
     left: 77%;
-    bottom: 748px;
+    bottom: 634px;
     font-family: monospace;
     font-size: 18px;
     text-align: left;
@@ -204,7 +221,7 @@ button:hover {
     width: 22%;
     height: 301px;
     position: relative;
-    top: -758px;
+    top: -640px;
     left: 76%;
     border-radius: 5px;
 }
@@ -231,10 +248,14 @@ button:hover {
     width: 22%;
     height: 301px;
     position: relative;
-    top: -758px;
+    top: -591px;
     left: 76%;
     border-radius: 5px;
 
+}
+#veh_detail{
+    position: relative;
+    top: -582px;
 }
 .vehicle_details{
     text-align: left;
@@ -256,4 +277,46 @@ button:hover {
     width: 25%;
     border-radius: 5px;
 
+}
+/* ABOUT */
+.about{
+    top: -115px;
+    font-family: system-ui;
+    font-size: 27px;
+    background-color: #e9d9b0;
+    color: black;
+    width: 96%;
+    height: 110vh;
+    border-radius: 27px;
+    position: relative;
+    left: 28px;
+}
+.about_h1{
+    position: relative;
+    left: -22%;
+    text-decoration: underline;
+    font-size: 29px;
+    word-spacing: 1px;
+    width: 92%;
+    position: relative;
+    left: -18%;
+    top: 34px;
+    color: red;
+}
+.about_p{
+    text-align: justify;
+    letter-spacing: -1px;
+    width: 92%;
+    position: relative;
+    left: 5%;
+    top: 63px;
+}
+.about_h3,.about_h5{
+    text-align: justify;
+    letter-spacing: -1px;
+    width: 92%;
+    position: relative;
+    left: 5%;
+    font-weight: 500;
+    top: 3%;
 }
